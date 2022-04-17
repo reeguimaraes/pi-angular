@@ -1,0 +1,59 @@
+{
+  "chamados": [{
+
+      "id": 1,
+      "loja": "loja1",
+      "departamento": "TI",
+      "foto":"ti.png",
+      "assunto": "Problema no computador",
+      "mensagem": "Meu computador esta com problema"
+    
+    },
+    {
+
+      "id": 2,
+      "loja": "loja2",
+      "departamento": "CAL",
+      "foto":"ti.png",
+      "assunto": "assunto",
+      "mensagem": "mensagem"
+      
+    },
+    {
+
+      "id": 3,
+      "loja": "loja3",
+      "departamento": "FINANCEIRO",
+      "foto":"ti.png",
+      "assunto": "assunto",
+      "mensagem": "mensagem"
+      
+    }
+  ],
+
+  "items": [{
+
+    "computador": 0,
+    "mouse": 0,
+    "impressora": 0,
+    "monitor": 0,
+    "celular": 0
+
+
+    }],
+
+    "lojas": [{
+      "loja10": "loja10@teste.com.br",
+      "loja11": "loja10@teste.com.br",
+      "loja12": "loja10@teste.com.br",
+      "loja13": "loja10@teste.com.br",
+      "loja14": "loja10@teste.com.br",
+      "loja15": "loja10@teste.com.br",
+      "loja16": "loja10@teste.com.br",
+      "loja17": "loja10@teste.com.br",
+      "loja18": "loja10@teste.com.br",
+      "loja19": "loja10@teste.com.br",
+      "loja20": "loja10@teste.com.br",
+      "loja21": "loja10@teste.com.br"
+    }]
+}

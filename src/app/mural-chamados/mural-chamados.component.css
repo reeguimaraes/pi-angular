@@ -1,0 +1,17 @@
+.lista-chamados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    margin-top: 100px;
+}
+
+.lista-chamados .card {
+    margin: 10px 30px;
+  
+}
+.card-body{
+    width: max-content;
+   
+}
