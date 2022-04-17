@@ -18,3 +18,13 @@
   </div>
 </div>
 </section>
+<aside class="side">
+  <div class="search-container">
+      <form>
+          <fa-icon [icon]="faSearch"></fa-icon>
+          <input type="text" placeholder="Pesquisar..."  (input)="search($event)"/>
+      </form>
+
+<button type="submit" class="btn btn-secondary">Buscar</button>
+</div>
+</aside>

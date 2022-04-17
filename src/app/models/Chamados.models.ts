@@ -1,4 +1,7 @@
 export class Chamado{
+    filter(arg0: (chamdo: any) => void): Chamado {
+      throw new Error('Method not implemented.');
+    }
     id: number = 0;
     loja: string = "";
     departamento: string = "";

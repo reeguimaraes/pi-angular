@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChamadosService } from '../chamados.service';
 import { Chamado } from '../models/Chamados.models';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -10,6 +11,10 @@ import { Chamado } from '../models/Chamados.models';
 })
 export class MuralChamadosComponent implements OnInit {
   public chamados: Chamado[] = [];
+  public chamado: Chamado = new Chamado(0, '', '', '', '', '');
+
+  faSearch = faSearch;
+  searchTerm: string ="";
 
   constructor(private _chamadosService: ChamadosService) {}
 
@@ -31,5 +36,15 @@ export class MuralChamadosComponent implements OnInit {
         );
       });
     });
+  }
+  search(e: Event):void {
+    
+    const target = e.target as HTMLInputElement;
+    const value = target.value;
+
+    this.chamado = this.chamado.filter(chamdo =>{
+      this.chamado.assunto.toLowerCase().includes(value);
+    });
+
   }
 }

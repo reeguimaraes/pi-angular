@@ -99,13 +99,21 @@
     <!-- FIM DO MODAL NOVO CHAMADO-->
       <hr />
       <div class="chamadoAberto">
+        <div *ngFor="let chamado of chamados">
         <a href="#" title="Ver os detalhes">
-          <h4 id="assuntoChamado">Protocolo #: Trazer informação após criação</h4>
-          <p>trazer informação do conteudo do chamado</p>
+          <h4 id="assuntoChamado">#{{chamado.id}}: {{chamado.assunto}}</h4>
+          <p>{{chamado.mensagem}}</p>
         </a>
       </div>
+    </div>
     </article>
     <aside class="side">
-      <input type="search" placeholder="Pesquisar..." />
+        <div class="search-container">
+            <form>
+                <fa-icon [icon]="faSearch"></fa-icon>
+                <input type="text" placeholder="Pesquisar..."  (input)="search($event)"/>
+            </form>
+     
       <button type="submit" class="btn btn-secondary">Buscar</button>
+      </div>
     </aside>

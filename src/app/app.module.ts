@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppComponent } from './app.component';
 import { MuralChamadosComponent } from './mural-chamados/mural-chamados.component';
@@ -21,7 +23,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
